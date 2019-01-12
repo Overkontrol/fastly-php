@@ -1,21 +1,21 @@
 {
-    "name": "fastly/fastly",
+    "name": "ovk/fastly",
     "license": "MIT",
     "type": "Library",
     "description": "Provides a PHP client for the Fastly API",
     "authors": [
         {
-            "name": "Gonzalo Vilaseca",
-            "email": "gonzalo.vilaseca@reiss.com",
+            "name": "Gusts Fridrihsons",
+            "email": "gusts@overkontrol.com",
             "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://github.com/fastly/fastly-php/issues",
-        "source": "https://github.com/fastly/fastly-php"
+        "issues": "https://github.com/Overkontrol/fastly-php/issues",
+        "source": "https://github.com/Overkontrol/fastly-php"
     },
     "require": {
-        "php": "^5.5 || ^7.0",
+        "php": "^7.1",
         "guzzlehttp/guzzle": "^6.2.0"
     },
     "require-dev": {
