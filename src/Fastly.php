@@ -5,11 +5,11 @@ namespace Fastly;
 use Fastly\Adapter\AdapterInterface;
 
 /**
- * @author Gonzalo Vilaseca <gonzalo.vilaseca@reiss.com>
+ * @author Gusts Fridrihsons <gusts@overkontrol.com>
  */
 class Fastly implements FastlyInterface
 {
-    const VERSION = '0.3.0';
+    const VERSION = '0.4.0';
     /**
      * Http adapter
      *
@@ -48,6 +48,28 @@ class Fastly implements FastlyInterface
         }
         return $this->adapter->send($method, $uri, $options);
     }
+    
+    
+    /*
+     * TODO, vediamo cosa bisogna FARE.
+     *
+     * 1) Purge URL -> asyn calls
+     * 2) Purge ALL
+     * 3) PurgeKey
+     * 4) PurgeMultipleKeys
+     *
+     * 5) SoftPurge Url -> async Calls
+     * 6) SoftPurgeKey
+     * 7) SoftPurgeMultipleKeys -> asyn calls
+     *
+     *
+     * Bon, l'interfaccia è più o meno questa
+     *
+     *
+     *
+     */
+    
+    
 
     /*
      * {@inheritdoc}

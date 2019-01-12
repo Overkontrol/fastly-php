@@ -5,7 +5,7 @@ namespace Fastly;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * @author Gonzalo Vilaseca <gonzalo.vilaseca@reiss.com>
+ * @author Gusts Fridrihsons <gusts@overkontrol.com>
  */
 interface FastlyInterface {
     /**

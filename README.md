@@ -5,12 +5,12 @@ Installation via Composer
 -------------------------
 The recommended method to install _Fastly-PHP_ is through [Composer](http://getcomposer.org).
 
-1. Add ``fastly/fastly`` as a dependency in your project's ``composer.json``:
+1. Add ``ovk/fastly`` as a dependency in your project's ``composer.json``:
 
     ```json
         {
             "require": {
-                "fastly/fastly": "~0.2"
+                "ovk/fastly": "~0.3"
             }
         }
     ```
@@ -62,24 +62,6 @@ This packages uses [Guzzle](https://github.com/guzzle/guzzle) as the default htt
 
 To use a different http client an adapter class that implements implementing ``Fastly\Adapter\AdapterInterface`` should be provided.
 
-Testing
----
-There is a class provided in order to fake Fastly so it can be used for testing:
-```php
-$fastly = new FastlyFake();
-
-$result = $fastly->send('GET', 'stats?from=1+day+ago');
-
-$result = $fastly->purgeAll('some_service_id');
-
-$fastly->getCall(0); // Will return array('send', 'GET', 'stats?from=1+day+ago', array())
-$fastly->getCall(1); // Will return array('purgeAll', 'some_service_id', array());
-
-```
-
-Tests
----
-Run tests with ``bin/phpspec run``
 
 TODO
 -----
