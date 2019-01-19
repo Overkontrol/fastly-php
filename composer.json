@@ -1,5 +1,5 @@
 {
-    "name": "ovk/fastly",
+    "name": "ovk/fastly-php",
     "license": "MIT",
     "type": "Library",
     "description": "Provides a PHP client for the Fastly API",
