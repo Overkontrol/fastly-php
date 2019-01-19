@@ -5,12 +5,12 @@ Installation via Composer
 -------------------------
 The recommended method to install _Fastly-PHP_ is through [Composer](http://getcomposer.org).
 
-1. Add ``ovk/fastly`` as a dependency in your project's ``composer.json``:
+1. Add ``ovk/fastly-php`` as a dependency in your project's ``composer.json``:
 
     ```json
         {
             "require": {
-                "ovk/fastly": "~1.0.0"
+                "ovk/fastly-php": "~1.0.0"
             }
         }
     ```
