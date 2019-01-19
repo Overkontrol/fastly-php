@@ -2,45 +2,20 @@
 
 namespace Fastly;
 
-use Psr\Http\Message\ResponseInterface;
-
 /**
  * @author Gusts Fridrihsons <gusts@overkontrol.com>
  */
 interface FastlyInterface {
-    /**
-     * Send http request
-     *
-     * @param string $method
-     * @param string $uri
-     * @param array  $options
-     *
-     * @return ResponseInterface
-     */
-    public function send($method, $uri, array $options = []);
-
-    /**
-     * @param string $url
-     * @param array  $options
-     *
-     * @return ResponseInterface
-     */
-    public function purge($url, array $options = []);
-
-    /**
-     * @param string $service
-     * @param array  $options
-     *
-     * @return ResponseInterface
-     */
-    public function purgeAll($service, array $options = []);
-
-    /**
-     * @param string $service
-     * @param string $key
-     * @param array  $options
-     *
-     * @return ResponseInterface
-     */
-    public function purgeKey($service, $key, array $options = []);
+ 
+	function send($method, $uri, array $options = []);
+	function service ($name);
+ 
+	function purge($url);
+	function purgeAll();
+    function purgeKey($keys);
+	
+	function softPruge ($url);
+	function softPrugeKey ($keys);
+	
+	function getError ();
 }

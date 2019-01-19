@@ -11,10 +11,12 @@ interface AdapterInterface
 {
     /**
      * @param string $method
-     * @param string $uri
+     * @param mixed $uri
      * @param array  $options
      *
      * @return ResponseInterface
      */
-    public function send($method, $uri, array $options = []);
+    function send($method, $uri, array $options = []);
+
+	function getError();
 }
